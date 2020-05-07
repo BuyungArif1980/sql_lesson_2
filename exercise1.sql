@@ -1,3 +1,3 @@
--- dapatkan nilai rata-rata dari kolom price
-SELECT AVG(price)
-FROM purchases;
+-- dapatkan jumlah baris dikolom name dari table purchases
+SELECT COUNT(name)
+FROM purchases2;
