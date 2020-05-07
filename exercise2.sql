@@ -1,9 +1,11 @@
 /*
-dapatkan total berapa kali purchases terjadi berdasarkan
-purchased_at and character_name
+Tambahkan klausa WHERE untuk mendapatkan baris dengan category "makanan"
+setelah itu, kelompokkan hasilnya berdasarkan kolom
+purchased_at dan character_name
 */
 
-SELECT COUNT(*), purchased_at, character_name
+SELECT SUM(price), purchased_at, character_name
 FROM purchases
+WHERE category = 'makanan'
 GROUP BY purchased_at, character_name
 ORDER BY purchased_at, character_name;

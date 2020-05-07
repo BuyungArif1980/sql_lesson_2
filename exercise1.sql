@@ -1,5 +1,10 @@
--- dapatkan total harga purchases berdasarkan purchased_at dan character_name
-SELECT SUM(price), purchased_at, character_name
+/*
+tambahkan aturan di klausa WHERE untuk mengelompokkan
+baris, dimana character_name adalah "Ninja Ken"
+*/
+
+SELECT SUM(price), purchased_at
 FROM purchases
-GROUP BY purchased_at, character_name
-ORDER BY purchased_at, character_name;
+WHERE character_name = 'Ninja Ken'
+GROUP BY purchased_at
+ORDER BY purchased_at;
