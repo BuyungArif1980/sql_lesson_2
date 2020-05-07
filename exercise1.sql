@@ -1,3 +1,7 @@
--- Jalankan code untuk menampilkan kolom character_name dengan duplikasi
-SELECT character_name
+/*
+ambil data harga setelah pajak penjualan dari kolom price
+dengan melanjutkan statement dibawah
+*/
+
+SELECT name, price, price * 1.09
 FROM purchases;
