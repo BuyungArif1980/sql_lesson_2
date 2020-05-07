@@ -1,7 +1,3 @@
-/*
-ambil data harga setelah pajak penjualan dari kolom price
-dengan melanjutkan statement dibawah
-*/
-
-SELECT name, price, price * 1.09
+-- dapatkan total jumlah dari kolom price
+SELECT SUM(price)
 FROM purchases;
