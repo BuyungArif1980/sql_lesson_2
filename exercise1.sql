@@ -1,5 +1,5 @@
--- dapatkan jumlah total uang yang dikeluarkan untuk setiap grup purchased_at
-SELECT SUM(price), purchased_at
+-- dapatkan total harga purchases berdasarkan purchased_at dan character_name
+SELECT SUM(price), purchased_at, character_name
 FROM purchases
-GROUP BY purchased_at
-ORDER BY purchased_at ASC;
+GROUP BY purchased_at, character_name
+ORDER BY purchased_at, character_name;
