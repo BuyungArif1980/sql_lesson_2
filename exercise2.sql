@@ -1,11 +1,6 @@
-/*
-Tambahkan klausa WHERE untuk mendapatkan baris dengan category "makanan"
-setelah itu, kelompokkan hasilnya berdasarkan kolom
-purchased_at dan character_name
-*/
-
+-- dapatkan total berdasarkan tanggal dan karakter dimana totalnya lebih dari 30
 SELECT SUM(price), purchased_at, character_name
 FROM purchases
-WHERE category = 'makanan'
 GROUP BY purchased_at, character_name
-ORDER BY purchased_at, character_name;
+HAVING SUM(price) > 30
+ORDER BY purchased_at;

@@ -1,10 +1,10 @@
 /*
-tambahkan aturan di klausa WHERE untuk mengelompokkan
-baris, dimana character_name adalah "Ninja Ken"
+dapatkan total harga, lalu kelompokkan hasilnya berdasarkan tanggal,
+hanya untuk grup yang memiliki total harga lebih dari 20
 */
 
 SELECT SUM(price), purchased_at
 FROM purchases
-WHERE character_name = 'Ninja Ken'
 GROUP BY purchased_at
+HAVING SUM(price) > 20
 ORDER BY purchased_at;
