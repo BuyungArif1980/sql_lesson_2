@@ -1,3 +1,3 @@
--- dapatkan jumlah baris dikolom name dari table purchases
-SELECT COUNT(name)
-FROM purchases2;
+-- dapatkan harga tertinggi di kolom price
+SELECT MAX(price)
+FROM purchases;

@@ -1,3 +1,3 @@
--- dapatkan jumlah baris di tabel purchases
-SELECT COUNT(*)
-FROM purchases2;
+-- dapatkan harga terendah dikolom price
+SELECT MIN(price)
+FROM purchases;
